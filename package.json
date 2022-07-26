@@ -1,0 +1,47 @@
+{
+  "name": "react-object-control",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Neisvestney <neisvestney113@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist",
+    "dist/styles/*.css"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./dist/styles/simple.css": "./dist/styles/simple.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "postcss": "^8.4.14",
+    "react": "^18.2.0",
+    "rollup": "^2.77.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.53.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
