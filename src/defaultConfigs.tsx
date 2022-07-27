@@ -14,7 +14,7 @@ export enum ObjectControlState {
 export type ConfigItem<T> = {
     label?: string,
     placeHolder?: string,
-    undefinable?: boolean,
+    // clearable?: boolean | "null" | "undefined",
     choices?: T[keyof T][] | [T[keyof T], string][],
     type?: Type,
     control?: (value: T[keyof T], key: string, onChange: (v: T[keyof T]) => void, state: ObjectControlState, config: ConfigItem<T>) => ReactElement,
