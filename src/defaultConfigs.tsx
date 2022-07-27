@@ -6,9 +6,9 @@ export const typeStrings = ["string", "number", "custom"] as const;
 export type Type = typeof typeStrings[number] | undefined;
 
 export enum ObjectControlState {
-    Active,
-    Disabled,
-    Loading
+    Active = "Active",
+    Disabled = "Disabled",
+    Loading = "Loading"
 }
 
 export type ConfigItem<T> = {

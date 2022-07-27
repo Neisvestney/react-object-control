@@ -1,0 +1,19 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import LinkTo from '@storybook/addon-links/react';
+
+<Meta title="Introduction" />
+
+# React Object Control
+React components library for editing js object (such as api forms)
+
+## <LinkTo kind="objectcontrol--default">ObjectControl</LinkTo>
+Component for editing and viewing js objects
+```jsx
+<ObjectControl value={{name: "Alex"}} config={{name: {label: "Name"}}}/>
+```
+
+##  <LinkTo kind="objectcontrolform--default">ObjectControlForm</LinkTo>
+ObjectControl with submit
+```jsx
+<ObjectControlForm value={{name: "Alex"}} config={{name: {label: "Name"}}} onSubmit={v => console.log(v)}/>
+```

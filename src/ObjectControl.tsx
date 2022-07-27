@@ -14,7 +14,13 @@ export interface ObjectControlProps<T extends object> {
     className?: string,
 }
 
-
+/**
+ * Component for editing and viewing js objects
+ * Example:
+ * ```jsx
+ * <ObjectControl value={{name: "Alex"}} config={{name: {label: "Name"}}}/>
+ * ```
+ */
 function ObjectControl<T extends object>(props: ObjectControlProps<T>) {
     const onChange = (v: T[keyof T], key: keyof T) => {
         if (props.onChange) {

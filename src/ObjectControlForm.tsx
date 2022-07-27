@@ -7,6 +7,14 @@ export interface ObjectControlFormProps<T extends object> extends ObjectControlP
     formClassName?: string,
 }
 
+
+/**
+ * Component for editing and viewing js objects with submit
+ * Example:
+ * ```
+ * <ObjectControlForm value={{name: "Alex"}} config={{name: {label: "Name"}}} onSubmit={v => console.log(v)}/>
+ * ```
+ */
 function ObjectControlForm<T extends object>(props: ObjectControlFormProps<T>) {
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
